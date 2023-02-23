@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+:root {
+  --xlg: 33px;
+  --lg: 25px;
+  --sm: 15px;
+  --xsm: 9px;
+}
+
+@media (min-width: 799px) {
+  :root {
+    --xlg: 26px;
+    --lg: 22px;
+    --sm: 13px;
+    --xsm: 10px;
+  }
+}
+*,
+*:is(::before, ::after) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:hover,
+*:is(::before, ::after):hover {
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img, svg {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  background: hsl(27deg, 66%, 92%);
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: grid;
+  align-items: center;
+}
+
+.main_sections {
+  position: relative;
+  width: 90vw;
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-block: 1em;
+}
+
+.header_section {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.944);
+  background: hsl(10deg, 79%, 65%);
+  padding: 1.2em;
+  border-radius: 12px;
+  align-items: center;
+  margin-block: auto;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.325);
+}
+.header_section .dcrp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.header_section .dcrp h3 {
+  font-weight: 400;
+  font-size: var(--sm);
+}
+.header_section .dcrp p {
+  font-weight: 700;
+  font-size: var(--lg);
+}
+
+.displays {
+  background: hsl(33deg, 100%, 98%);
+  padding: 1.2em 1em;
+  border-radius: 12px;
+}
+.displays h2 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 1em;
+  color: hsl(25deg, 47%, 15%);
+}
+.displays .chart_section {
+  padding-bottom: 1em;
+  border-bottom: 1.5px solid hsl(28deg, 10%, 53%);
+}
+.displays .chart_section canvas {
+  min-height: 200px;
+}
+.displays .aside {
+  padding-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.displays .aside .total {
+  display: flex;
+  flex-direction: column;
+}
+.displays .aside .total h3 {
+  font-weight: 400;
+  font-size: var(--sm);
+  margin: 0;
+  color: hsl(28deg, 10%, 53%);
+}
+.displays .aside .total p {
+  font-weight: 700;
+  font-size: var(--xlg);
+  margin: 0;
+  padding: 0;
+  color: hsl(25deg, 47%, 15%);
+}
+.displays .aside .rating h4 {
+  font-size: var(--sm);
+  font-weight: 700;
+  color: hsl(25deg, 47%, 15%);
+}
+.displays .aside .rating p {
+  font-size: var(--sm);
+  color: hsl(28deg, 10%, 53%);
+}
+
+/*# sourceMappingURL=main.css.map */
